@@ -21,8 +21,9 @@ def get_japanese_emoticon(path, emoticon)
   new_hash = load_library(path)
   japanese_emoticon = new_hash.keys.find do |key|
     new_hash[key][:english]
+  binding.pry
   end
-    binding.pry
+
 
 
   if japanese_emoticon == nil
