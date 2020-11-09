@@ -41,6 +41,6 @@ def get_english_meaning(path, emoticon)
     "Sorry, that emoticon was not found"
   else
     new_hash[result][:japanese]
-    binding.pru
+    binding.pry
   end
 end
