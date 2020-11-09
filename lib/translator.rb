@@ -11,6 +11,9 @@ def load_library(path)
     japanese = value[1]
     emoticon_hash["get_meaning"][japanese] = meaning
     emoticon_hash["get_emoticon"][english] = japanese
+  end
+  emoticon_hash
+end
 
   #emoticons.each do |meaning, value|
     #english = value[0]
