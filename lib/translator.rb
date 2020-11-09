@@ -6,7 +6,7 @@ def load_library(path)
   emoticons = YAML.load_file(path).each do |meaning, value|
   emoticon_hash = {"get_meaning" => {}, "get_emoticon" => {}}
 
-  emoticons.each do |meaning, value| 
+  emoticons.each do |meaning, value|
     english = value[0]
     japanese = value[1]
     emoticons["get_meaning"][japanese] = meaning
@@ -40,5 +40,6 @@ def get_english_meaning(path, emoticon)
   if result == nil
     result = "Sorry, that emoticon was not found"
   end
+end
   result
 end
