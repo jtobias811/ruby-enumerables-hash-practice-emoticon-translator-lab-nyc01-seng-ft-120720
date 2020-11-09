@@ -36,10 +36,11 @@ def get_english_meaning(path, emoticon)
   result = new_hash.keys.find do |key|
     new_hash[key][:japanese] == emoticon
   end
-  
+
   if result == nil
     "Sorry, that emoticon was not found"
   else
     new_hash[result][:japanese]
+    binding.pru
   end
 end
