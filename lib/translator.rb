@@ -7,12 +7,12 @@ def load_library(path)
 
   new_hash = {}
 
-  emoticons.each do |meaning, value|
+  emoticons.each do |english_meaning, value_array|
     binding.pry
     english = value[0]
     japanese = value[1]
-    emoticon_hash["get_meaning"][japanese] = meaning
-    emoticon_hash["get_emoticon"][english] = japanese
+    new_hash["get_meaning"][japanese] = meaning
+    new_hash["get_emoticon"][english] = japanese
     binding.pry
   end
   emoticon_hash
