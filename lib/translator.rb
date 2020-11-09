@@ -15,14 +15,6 @@ def load_library(path)
   emoticon_hash
 end
 
-  #emoticons.each do |meaning, value|
-    #english = value[0]
-    #japanese = value[1]
-    #emoticons["get_meaning"][japanese] = meaning
-    #emoticons["get_emoticon"][english] = japanese
-#  end
- #emoticons
-#end
 
 def get_japanese_emoticon(path, emoticon)
   emoticon_hash = load_library(path)
