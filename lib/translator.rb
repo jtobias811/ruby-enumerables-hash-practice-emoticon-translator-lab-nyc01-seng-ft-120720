@@ -7,6 +7,7 @@ def load_library(path)
   emoticon_hash = {}
 
   emoticons.each do |meaning, value|
+    binding.pry
     english = value[0]
     japanese = value[1]
     emoticon_hash["get_meaning"][japanese] = meaning
