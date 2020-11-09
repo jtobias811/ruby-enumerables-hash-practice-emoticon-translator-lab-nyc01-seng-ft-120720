@@ -35,6 +35,7 @@ def get_english_meaning(path, emoticon)
   new_hash = load_library(path)
   result = new_hash.keys.find do |key|
     new_hash[key][:japanese] == emoticon
+  end
   if result == nil
     "Sorry, that emoticon was not found"
   else
