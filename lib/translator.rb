@@ -24,14 +24,11 @@ def get_japanese_emoticon(path, emoticon)
   binding.pry
   end
 
-
-
   if japanese_emoticon == nil
-    japanese_emoticon = "Sorry, that emoticon was not found"
+    "Sorry, that emoticon was not found"
   else
     new_hash[emoticon][:japanese]
   end
-  japanese_emoticon
 end
 
 def get_english_meaning(path, emoticon)
