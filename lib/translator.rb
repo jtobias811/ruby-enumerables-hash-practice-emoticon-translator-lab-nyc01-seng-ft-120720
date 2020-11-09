@@ -8,7 +8,7 @@ def load_library(path)
   new_hash = {}
 
   emoticons.each do |english_meaning, value_array|
-    binding.pry
+    #binding.pry
     new_hash[english_meaning] = {}
     new_hash[english_meaning][:english] = value_array[0]
     new_hash[english_meaning][:japanese] = value_array[1]
