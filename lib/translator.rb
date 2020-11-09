@@ -39,5 +39,4 @@ def get_english_meaning(path, emoticon)
   else
     new_hash[result][:japanese]
   end
-  result
 end
