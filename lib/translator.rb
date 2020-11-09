@@ -8,6 +8,12 @@ def load_library
 
   emoticons_hash["get_emoticon"] = Hash.new
   emoticons_hash["get_meaning"] = Hash.new
+
+  emoticons.each do |path, emoticon_set|
+    emoticon_hash["get_emoticon"][emoticon_set.first] = emoticon_set.last
+    emoticon_hash["get_meaning"][emoticon_set.last] = english_word
+  end
+  emoticon_hash
 end
 
 def get_japanese_emoticon
