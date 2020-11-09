@@ -43,4 +43,5 @@ def get_english_meaning(path, emoticon)
     new_hash[result][:japanese]
     binding.pry
   end
+  result
 end
