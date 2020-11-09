@@ -27,7 +27,7 @@ def get_japanese_emoticon(path, emoticon)
   if japanese_emoticon == nil
     "Sorry, that emoticon was not found"
   else
-    new_hash[emoticon][:japanese]
+    new_hash[japanese_emoticon][:japanese]
   end
 end
 
