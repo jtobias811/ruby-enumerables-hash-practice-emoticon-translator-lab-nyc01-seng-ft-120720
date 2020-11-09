@@ -33,9 +33,11 @@ end
 
 def get_english_meaning(path, emoticon)
   new_hash = load_library(path)
-  result = new_hash[key][emoticon]
+  result = new_hash[key][:japanese]
   if result == nil
-    result = "Sorry, that emoticon was not found"
+    "Sorry, that emoticon was not found"
+  else 
+    new_hash[result][:japanese]
   end
   result
 end
