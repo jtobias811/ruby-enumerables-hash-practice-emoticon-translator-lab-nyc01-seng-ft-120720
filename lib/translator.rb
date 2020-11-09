@@ -11,6 +11,7 @@ def load_library(path)
     japanese = value[1]
     emoticon_hash["get_meaning"][japanese] = meaning
     emoticon_hash["get_emoticon"][english] = japanese
+    binding.pry
   end
   emoticon_hash
 end
