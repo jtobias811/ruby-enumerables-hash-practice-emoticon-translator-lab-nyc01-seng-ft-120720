@@ -41,5 +41,4 @@ def get_english_meaning(path, emoticon)
     "Sorry, that emoticon was not found"
     #binding.pry
   end
-  result
 end
